@@ -21,6 +21,13 @@ try:
 except Exception:
     PLOTLY_EVENTS_AVAILABLE = False
 
+import sys, numpy, pandas
+import scipy
+
+print("PY:", sys.version)
+print("NUMPY:", numpy.__version__)
+print("PANDAS:", pandas.__version__)
+print("SCIPY:", scipy.__version__)
 
 # =========================
 # Config
