@@ -171,7 +171,7 @@ def make_plotly_fig(t: np.ndarray, norm: np.ndarray, event_times: Dict[str, floa
         v = event_times.get(key, None)
         if v is None:
             continue
-        fig.add_vline(x=float(v), line_dash="dash", line_width=1, line_color="gray")
+        fig.add_vline(x=float(v), line_dash="dash", line_width=1, line_color="black")
         fig.add_annotation(
             x=float(v) + 0.1,
             y=y_max,
